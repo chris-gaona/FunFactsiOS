@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // ! is an optional
+    // they allow us to set values to nil
+    // the label may not exist in the UI yet
     @IBOutlet weak var funFactLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        funFactLabel.text = "An interesting fact!"
     }
 
     override func didReceiveMemoryWarning() {
