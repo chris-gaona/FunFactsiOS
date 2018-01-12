@@ -14,12 +14,12 @@ class ViewController: UIViewController {
     // they allow us to set values to nil
     // the label may not exist in the UI yet
     @IBOutlet weak var funFactLabel: UILabel!
-    let facts = ["Ants stretch when they wake up in the morning", "Ostriches can run faster than horses"]
+    let factProvider = FactProvider()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        funFactLabel.text = facts[0]
+        funFactLabel.text = factProvider.facts[0]
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showFact() {
-        funFactLabel.text = facts[1]
+        funFactLabel.text = factProvider.facts[1]
     }
     
 }
