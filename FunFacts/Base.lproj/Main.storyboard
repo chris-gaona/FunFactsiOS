@@ -37,6 +37,12 @@
                                     <action selector="showFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="s76-wr-V2M"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qM7-Dy-lAO">
+                                <rect key="frame" x="20" y="160" width="118" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -46,6 +52,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C5x-p1-dag" secondAttribute="trailing" constant="20" id="baD-qu-Hv8"/>
                             <constraint firstItem="5P4-7O-Dc4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="c27-mU-Otq"/>
                             <constraint firstItem="5P4-7O-Dc4" firstAttribute="centerX" secondItem="C5x-p1-dag" secondAttribute="centerX" id="cHF-NW-6R4"/>
+                            <constraint firstItem="qM7-Dy-lAO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jfQ-1f-JBp"/>
+                            <constraint firstItem="qM7-Dy-lAO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="zs2-X2-Kcj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
