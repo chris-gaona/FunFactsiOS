@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     // they allow us to set values to nil
     // the label may not exist in the UI yet
     @IBOutlet weak var funFactLabel: UILabel!
+    @IBOutlet weak var funFactButton: UIButton!
     let factProvider = FactProvider()
+    let colorProvider = BackgroundColorProvider()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,9 @@ class ViewController: UIViewController {
 
     @IBAction func showFact() {
         funFactLabel.text = factProvider.randomFact()
+        let randomColor = colorProvider.randomColor()
+        view.backgroundColor = randomColor
+        funFactButton.tintColor = randomColor
     }
     
 }
